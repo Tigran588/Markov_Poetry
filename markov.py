@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 # 1. Data Processing
 def preprocess_message(message):
     message = message.lower()
-    message = re.sub(r'[^a-z\s]', '', message)  # remove punctuation, numbers, etc.
+    message = re.sub(r'[^a-z\s]', '', message)  
     words = message.split()
     return words
 
